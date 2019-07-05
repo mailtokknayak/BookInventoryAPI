@@ -22,8 +22,6 @@ class BookService{
     }
 
     fun updateBookDetails(id:String , book: Book) : Mono<Book> {
-
-//        bookRepository.deleteById(id)
        return bookRepository.save(book)
     }
 }
